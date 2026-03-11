@@ -1,15 +1,15 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreSystem : MonoBehaviour
 {
-   string scoreKey = "Score";
-   public int CurrentScore { get; set; }
+    string scoreKey = "Score";
+    public int CurrentScore { get; set; }
 
-   private void Awake()
+    private void Awake()
     {
         CurrentScore = PlayerPrefs.GetInt(scoreKey);
     }
@@ -18,4 +18,5 @@ public class ScoreManager : MonoBehaviour
     {
         PlayerPrefs.SetInt(scoreKey, score);
     }
+
 }

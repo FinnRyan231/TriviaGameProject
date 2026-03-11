@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class questionThree : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class questionThree : MonoBehaviour
     public GameObject questionNumber;
     public GameObject BG_Regular;
     public GameObject BG_Incorrect;
-    public GameObject popUp;
+    public TMP_Text CorrectAnswer;
+
 
 
 void completeQuestion()
@@ -24,31 +26,40 @@ void completeQuestion()
         nextHitbox.SetActive(true);
         tennaTV.SetActive(true);
         BG_Regular.SetActive(true);
-        currentHitbox.SetActive(false);
         currentQuestion.SetActive(false);
         correctAnswer.SetActive(false);
         wrongAnswer.SetActive(false);
         BG_Incorrect.SetActive(false);
     }
 
-void DeletePopup()
-{
-    popUp.SetActive(false);
-}
+    [SerializeField]
+    private TMP_Text scoreText;
+    [SerializeField]
+    private FloatSO scoreSO;
+
+    void Start()
+    {
+    
+        scoreText.text = scoreSO.Value + "";
+    }
 
 private void OnCollisionEnter2D(Collision2D collision)
 {
     if(collision.gameObject.tag == "Player")
     {
-        Invoke("completeQuestion", 1);
-        Invoke("DeletePopup", 1);
-        
+        Invoke("completeQuestion", 2);
+
         if(gameObject.tag == "Correct")
             {
                 AudioManager.Instance.PlaySFX(AudioManager.Instance.correctSFX);
                 tennaTV.SetActive(false);
                 questionNumber.SetActive(false);
                 correctAnswer.SetActive(true);
+                currentHitbox.SetActive(false);
+                CorrectAnswer.color = Color.green;
+
+                scoreSO.Value += 100;
+                scoreText.text = scoreSO.Value + "";
 
 
             }
@@ -59,8 +70,10 @@ private void OnCollisionEnter2D(Collision2D collision)
                 tennaTV.SetActive(false);
                 questionNumber.SetActive(false);
                 wrongAnswer.SetActive(true);
+                currentHitbox.SetActive(false);
                 BG_Incorrect.SetActive(true);
                 BG_Regular.SetActive(false);
+                CorrectAnswer.color = Color.green;
                 CameraShakeManager.Instance.Shake(2f, 1f);
             }
     }

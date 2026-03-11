@@ -311,7 +311,9 @@ MonoBehaviour:
   questionNumber: {fileID: 778050785}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 887155993}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &67229408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -608,7 +610,9 @@ MonoBehaviour:
   questionNumber: {fileID: 164132045}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 694203518}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &108718264
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -766,7 +770,9 @@ MonoBehaviour:
   questionNumber: {fileID: 164132045}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 694203518}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &127634303
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1245,6 +1251,9 @@ MonoBehaviour:
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
   questionNumber: {fileID: 1109044814}
+  CorrectAnswer: {fileID: 2058501443}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &257920494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1574,7 +1583,9 @@ MonoBehaviour:
   questionNumber: {fileID: 2039332716}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 1600316491}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &295116186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1770,7 +1781,9 @@ MonoBehaviour:
   questionNumber: {fileID: 164132045}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 694203518}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &341213627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2302,7 +2315,9 @@ MonoBehaviour:
   questionNumber: {fileID: 386224472}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 1110781905}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!1 &403466724
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,7 +2407,9 @@ MonoBehaviour:
   questionNumber: {fileID: 1344531229}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 832168323}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &430504472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3350,26 +3367,13 @@ GameObject:
   - component: {fileID: 644367299}
   - component: {fileID: 644367298}
   - component: {fileID: 644367297}
-  - component: {fileID: 644367296}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &644367296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644367295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a18b5cdae4fc224898d21522ca87e85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &644367297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6617,7 +6621,9 @@ MonoBehaviour:
   questionNumber: {fileID: 1495394761}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 1553964440}
+  CorrectAnswer: {fileID: 1113895507}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!212 &1005292574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7065,7 +7071,9 @@ MonoBehaviour:
   questionNumber: {fileID: 778050785}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 887155993}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &1061658084
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7179,7 +7187,7 @@ GameObject:
   - component: {fileID: 1064731569}
   - component: {fileID: 1064731568}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: POINTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7300,7 +7308,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 758, y: 88}
+  m_AnchoredPosition: {x: 177, y: -45}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1089729833
@@ -7359,7 +7367,9 @@ MonoBehaviour:
   questionNumber: {fileID: 1344531229}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 832168323}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &1089729836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8303,7 +8313,9 @@ MonoBehaviour:
   questionNumber: {fileID: 1495394761}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 1553964440}
+  CorrectAnswer: {fileID: 1113895507}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!212 &1207660994
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8492,7 +8504,9 @@ MonoBehaviour:
   questionNumber: {fileID: 778050785}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 887155993}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &1275691542
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8890,7 +8904,9 @@ MonoBehaviour:
   questionNumber: {fileID: 386224472}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 1110781905}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!1 &1294718189
 GameObject:
   m_ObjectHideFlags: 0
@@ -8982,7 +8998,9 @@ MonoBehaviour:
   questionNumber: {fileID: 1495394761}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 1553964440}
+  CorrectAnswer: {fileID: 1113895507}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!212 &1326637049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9925,7 +9943,9 @@ MonoBehaviour:
   questionNumber: {fileID: 2039332716}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 1600316491}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &1554554127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11463,7 +11483,9 @@ MonoBehaviour:
   questionNumber: {fileID: 1344531229}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 832168323}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &1815525002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11621,7 +11643,9 @@ MonoBehaviour:
   questionNumber: {fileID: 2039332716}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 1600316491}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &1831917600
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11964,6 +11988,9 @@ MonoBehaviour:
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
   questionNumber: {fileID: 1109044814}
+  CorrectAnswer: {fileID: 2058501443}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &1841257079
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12892,7 +12919,9 @@ MonoBehaviour:
   questionNumber: {fileID: 386224472}
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
-  popUp: {fileID: 0}
+  CorrectAnswer: {fileID: 1110781905}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!1 &1981483357
 GameObject:
   m_ObjectHideFlags: 0
@@ -13206,6 +13235,9 @@ MonoBehaviour:
   BG_Regular: {fileID: 1878738607}
   BG_Incorrect: {fileID: 606711413}
   questionNumber: {fileID: 1109044814}
+  CorrectAnswer: {fileID: 2058501443}
+  scoreText: {fileID: 1064731568}
+  scoreSO: {fileID: 11400000, guid: 7c67498bfb7a7c840975ac65490483d0, type: 2}
 --- !u!61 &2016507802
 BoxCollider2D:
   m_ObjectHideFlags: 0
